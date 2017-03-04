@@ -7,3 +7,6 @@ https://ContainerHost:8181/ - only `https` will work as CouchPotato only listens
 
 # Sample Setup
 docker create -p 8181:8181 -v /media/config/headphones:/config -v /media/download:/downloads -v /media/headphones:/media/music --name=hptest docker.io/rootwyrm/lxc-media:headphones
+
+# Todo
+Reduce size further.. dependency chain for ffmpeg changed resulting in a massive 130MB+ local image. Should be able to pare down some of these requirements to get the amount on disk much lower.
